@@ -1,0 +1,4 @@
+//my plan for research is to add coding snippets that work on their own as examples of new and previous concepts.
+//adding example snippets of previous concepts will help cement those concepts in my mind 
+//especially because coding isn't my strong suit
+//New concepts will have detailed explanations of what's going on also with working examples
