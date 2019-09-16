@@ -1,14 +1,24 @@
-char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
+using System;
+using System.Globalization;
 
-string text = "one\ttwo three:four,five six seven";
-System.Console.WriteLine($"Original text: '{text}'");
-
-string[] words = text.Split(delimiterChars);
-System.Console.WriteLine($"{words.Length} words in text:");
-
-foreach (var word in words)
+public class Example
 {
-    System.Console.WriteLine($"<{word}>");
+   public static void Main()
+   {
+        char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
+
+        string text = "one\ttwo three:four,five six seven";
+        System.Console.WriteLine($"Original text: '{text}'");
+
+        string[] words = text.Split(delimiterChars);//gets ride of characters in delimiterchars when parsing
+        System.Console.WriteLine($"{words.Length} words in text:");
+
+        foreach (var word in words)
+        {
+            System.Console.WriteLine($"<{word}>");//parses sentence into individual words
+        }
+
+    }
 }
 
 /* output Original text: 'one	two three:four,five six seven'
